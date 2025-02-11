@@ -33,6 +33,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+google-services.json
 
 # node.js
 #
@@ -71,7 +72,7 @@ yarn-error.log
 *.env
 *.env.local
 ios/tmp.xcconfig
-
+ios/GoogleService-Info.plist
 # fastlane metadata
 android/tmp_fastlane.properties
 

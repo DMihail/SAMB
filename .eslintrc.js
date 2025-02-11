@@ -4,7 +4,16 @@ const path = require('path');
 
 module.exports = {
   root: true,
-  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'prettier', 'react', 'react-hooks', 'react-native'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'jsx-a11y',
+    'prettier',
+    'react',
+    'react-hooks',
+    'react-native',
+    'redux-saga',
+  ],
   parser: '@typescript-eslint/parser',
   settings: {
     'import/resolver': {
