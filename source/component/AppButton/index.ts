@@ -12,6 +12,7 @@ export type CustomButtonType = {
   onPress?: () => void;
   title: string;
   textStyle?: TextStyle;
+  testID?: string;
 };
 
 export const AppButton = {

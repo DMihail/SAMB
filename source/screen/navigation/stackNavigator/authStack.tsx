@@ -5,7 +5,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { Routes } from '~/constants';
-import { Login } from '~/screen';
+import { Login, ForgotPassword } from '~/screen';
 import { AuthStackParamList } from '~/types';
 
 const Stack = createNativeStackNavigator<AuthStackParamList>();
@@ -19,7 +19,7 @@ export const AuthStack = () => {
       }}
     >
       <Stack.Screen name={Routes.LOGIN} component={Login} />
-      {/*<Stack.Screen name={Routes.FORGOT_PASSWORD} component={Register} />*/}
+      <Stack.Screen name={Routes.FORGOT_PASSWORD} component={ForgotPassword} />
     </Stack.Navigator>
   );
 };

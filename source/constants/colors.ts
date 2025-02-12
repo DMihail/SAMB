@@ -4,6 +4,7 @@ export const colors = {
   white: '#FFFFFF',
   red: '#E74B3C',
   black: '#000000',
+  blackOpacity: '#00000099',
   nero: '#222222',
   neroOpacity: '#22222226',
   caribbeanGreen: '#0DC39C',

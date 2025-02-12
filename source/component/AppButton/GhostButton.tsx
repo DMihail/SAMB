@@ -1,22 +1,27 @@
 /** @format */
 
 import React, { FC } from 'react';
-import { ActivityIndicator, StyleSheet, TouchableOpacity } from 'react-native';
+import { ActivityIndicator, Pressable, StyleSheet } from 'react-native';
 
 import { AppText } from '~/component';
 import { colors, Fonts } from '~/constants';
 
 import { CustomButtonType } from './';
 
-export const GhostButton: FC<CustomButtonType> = ({ onPress, disabled, title, isLoading, textStyle }) => {
+export const GhostButton: FC<CustomButtonType> = ({ onPress, disabled, title, isLoading, textStyle, testID }) => {
   return (
-    <TouchableOpacity onPress={onPress} disabled={disabled} style={[styles.container, disabled && styles.disabled]}>
+    <Pressable
+      onPress={onPress}
+      disabled={disabled}
+      style={[styles.container, disabled && styles.disabled]}
+      testID={testID}
+    >
       {isLoading ? (
         <ActivityIndicator color={colors.caribbeanGreen} size={'large'} />
       ) : (
         <AppText styleText={[styles.title, textStyle]}>{title}</AppText>
       )}
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

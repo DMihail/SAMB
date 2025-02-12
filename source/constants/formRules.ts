@@ -1,9 +1,17 @@
+/** @format */
+
 export const emailFromInputRule = {
-  required: true,
-  pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+  required: 'Invalid email address',
+  pattern: {
+    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+    message: 'Invalid email address',
+  },
 };
 
 export const passwordFromInputRule = {
-  required: true,
-  minLength: 6,
+  required: 'Invalid password',
+  minLength: {
+    value: 6,
+    message: 'Minimum password length 6 characters',
+  },
 };

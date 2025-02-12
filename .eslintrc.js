@@ -26,7 +26,9 @@ module.exports = {
   rules: {
     'no-restricted-imports': 'off',
     'react-native/no-inline-styles': 0,
+    'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
     // this is for sorting imports
     'import/order': [
       'error',

@@ -8,9 +8,9 @@ import { colors, Fonts } from '~/constants';
 
 import { CustomButtonType } from './';
 
-export const LinkButton: FC<CustomButtonType> = ({ onPress, disabled, title, textStyle }) => {
+export const LinkButton: FC<CustomButtonType> = ({ onPress, disabled, title, textStyle, testID }) => {
   return (
-    <Pressable onPress={onPress} disabled={disabled}>
+    <Pressable onPress={onPress} disabled={disabled} testID={testID}>
       <AppText styleText={[styles.title, textStyle]}>{title}</AppText>
     </Pressable>
   );

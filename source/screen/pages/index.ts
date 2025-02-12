@@ -1,3 +1,3 @@
 /** @format */
 
-export * from './Login/Login';
+export * from './Auth';
