@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import Svg, { Path, SvgProps } from 'react-native-svg';
 
-export const Language = (props: SvgProps) => {
+export const ChooseLanguage = (props: SvgProps) => {
   return (
     <Svg width={29} height={28} viewBox="0 0 29 28" fill="none" {...props}>
       <Path

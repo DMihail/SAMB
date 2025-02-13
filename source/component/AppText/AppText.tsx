@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import { StyleProp, StyleSheet, Text, TextStyle } from 'react-native';
 
-import { Fonts } from '~/constants';
+import { colors, Fonts } from '~/constants';
 
 type AppTextProps = {
   font?: (typeof Fonts)[keyof typeof Fonts];
@@ -30,5 +30,6 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.LatoRegular,
     fontSize: 18,
     fontWeight: 400,
+    color: colors.nero,
   },
 });
